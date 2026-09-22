@@ -68,10 +68,10 @@ while phone == True:
                             
                             match phone_book_options:
                                 case "99":
-                                    break
+                                    phone_book_options_loop = False
                                     
                                 case "0":
-                                    phone_book_loop = False
+                                    break
                                    
                                 case _:
                                     print("CANNOT NAVIGATE FURTHER")
@@ -134,7 +134,7 @@ while phone == True:
                                                 message_settings_set_loop = False
                             
                                             case "0":             
-                                                messages_loop = False
+                                                break
                                         
                                             case _:
                                                 print("CANNOT NAVIGATE FURTHER")
@@ -154,11 +154,10 @@ while phone == True:
                                         
                                         match message_settings_common:
                                             case "99":
-                                                break
+                                                message_settings_common_loop = False
                             
                                             case "0":             
-                                                print("EXITING................")
-                                                messages_loop = False
+                                                break
                                             
                                             case _:
                                                 print("CANNOT NAVIGATE FURTHER")
@@ -167,8 +166,7 @@ while phone == True:
                                     messages_settings_loop = False
                     
                                 case "0":             
-                                    print("EXITING................")
-                                    messages_loop = False
+                                    break
                                 
                                 case _:
                                     print("HINTS: 1 and 2") 
@@ -219,10 +217,10 @@ while phone == True:
 
                             match show_call_duration:
                                 case "99":
-                                    break
+                                    show_call_duration_loop = False
                                 
                                 case "0":
-                                    call_register_loop = False
+                                    break
                                 
                                 case _:
                                     print("CANNOT NAVIGATE FURTHER")
@@ -242,10 +240,10 @@ while phone == True:
 
                             match show_call_costs:
                                 case "99":
-                                    break
+                                    show_call_costs_loop = False
                                     
                                 case "0":
-                                    call_register_loop = False
+                                    break
                             
                                 case _:
                                     print("CANNOT NAVIGATE FURTHER")
@@ -264,10 +262,10 @@ while phone == True:
 
                             match call_cost_settings:
                                 case "99":
-                                    break
+                                    call_cost_settings_loop = False
                                     
                                 case "0":
-                                    call_register_loop = False
+                                    break
                             
                                 case _:
                                     print("CANNOT NAVIGATE FURTHER")
@@ -336,10 +334,10 @@ while phone == True:
 
                             match call_settings:
                                 case "99":
-                                    break
+                                    call_settings_loop = False
                             
                                 case "0":
-                                    settings_loop = False
+                                    break
                                 
                                 case _:
                                     print("CANNOT NAVIGATE FURTHER")
@@ -361,10 +359,10 @@ while phone == True:
 
                             match phone_settings:
                                 case "99":
-                                    break
+                                    phone_settings_loop = False
                                 
                                 case "0":
-                                    settings_loop = False
+                                    break
                                 
                                 case _:
                                     print("CANNOT NAVIGATE FURTHER")
@@ -387,10 +385,10 @@ while phone == True:
 
                             match security_settings:
                                 case "99":
-                                    break
+                                    security_settings_loop = True
                                 
                                 case "0":
-                                    settings_loop = False
+                                    break
                                 
                                 case _:
                                     print("CANNOT NAVIGATE FURTHER")
